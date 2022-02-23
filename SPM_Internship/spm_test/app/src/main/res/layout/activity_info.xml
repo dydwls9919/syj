@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/spm_logo">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server IP"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put Server IP"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/info1"
+            android:completionHint="pick an item"
+            android:completionThreshold="2">
+
+        </AutoCompleteTextView>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DataBase"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp">
+
+        </TextView>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put DataBase"
+            android:id="@+id/info2"
+            android:layout_marginLeft="5dp"
+            android:completionHint="pick an item"
+            android:completionThreshold="2">
+
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measuring Point"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put Measuring Point"
+            android:layout_marginLeft="5dp">
+
+        </EditText>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/button_mp">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assignment"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put Assignment"
+            android:id="@+id/info4"
+            android:layout_marginLeft="5dp">
+
+        </EditText>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/button_ass">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Value"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/info5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Put Request Value"
+        android:layout_marginLeft="5dp">
+
+    </EditText>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/button_rv">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Put"
+        android:id="@+id/put_button">
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME : "
+            android:id="@+id/req_name"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:id="@+id/req_value"
+            android:text="VALUE"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/value_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_lens_24"
+            android:visibility="visible">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="조회"
+        android:id="@+id/button_history"
+        android:layout_gravity="center">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/text_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:autoLink="web"
+            android:text="https://www.spminstrumentkorea.co.kr/">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:autoLink="phone"
+            android:text="02-2664-2224">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
